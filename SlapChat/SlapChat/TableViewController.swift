@@ -9,16 +9,17 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
-    
-    var managedMessageObjects: [Message] = []
-    let store: DataStore = DataStore()
+var test: Set<Message> = []
+  let store: DataStore = DataStore()
+//    
+//    var managedMessageObjects: [Message] = []
+//    let store: DataStore = DataStore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        store.fetchData()
-        
+      self.store.fetchDataByEntity()
+        tableView.reloadData()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -33,7 +34,7 @@ class TableViewController: UITableViewController {
         
         super.viewWillAppear(true)
         
-        store.fetchData()
+      store.fetchDataByEntity()
         tableView.reloadData()
         
     }
@@ -51,7 +52,7 @@ class TableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return store.messages.count
+        return self.test.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -60,7 +61,7 @@ class TableViewController: UITableViewController {
         
         let eachMessage = store.messages[indexPath.row]
         
-        cell.textLabel?.text = eachMessage.content
+       cell.textLabel?.text = eachMessage.content
         
         return cell
     }
