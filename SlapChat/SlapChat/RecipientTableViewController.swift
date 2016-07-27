@@ -16,7 +16,9 @@ class RecipientTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.store.fetchDataByEntity()
-        tableView.reloadData()
+        
+//        tableView.reloadData()
+
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -25,6 +27,19 @@ class RecipientTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
+    
+    
+//    override func viewWillAppear(animated: Bool) {
+//        
+//        super.viewWillAppear(true)
+//        
+//        store.fetchDataByEntity()
+//        tableView.reloadData()
+//       // print("fetch array \(store.fetchArray)")
+//
+//        
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,14 +54,15 @@ class RecipientTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return store.fetchArray.count
+        return store.recipients.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-         let eachRecepient = store.fetchArray[indexPath.row]
+         let eachRecepient = store.recipients[indexPath.row]
         
           cell.textLabel?.text = eachRecepient.name
         
@@ -56,14 +72,33 @@ class RecipientTableViewController: UITableViewController {
     }
  
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let destination = segue.destinationViewController as? TableViewController
+//        var newArray = store.recipients
+        
+        let destination = segue.destinationViewController as! TableViewController
         
         let path = tableView.indexPathForSelectedRow
         
-        let oneRecipient = store.fetchArray[(path?.row)!]
-        if let messagesS = oneRecipient.newRelationship{
-            destination?.test = messagesS
+//        print(newArray)
+        
+        let oneRecipient = store.recipients[path!.row]
+        
+//      print(oneRecipient)
+//
+//        let messages = //
+//            print(messages?.first?.content)
+//
+        if let unwrappedMessages = oneRecipient.messages{
+            
+        destination.test = unwrappedMessages
         }
+        
+        
+//        destination?.test = messages
+        
+//        if let messagesS = oneRecipient.newRelationship{
+//            destination?.test = messagesS
+//            print(destination?.test)
+//        }
         
 }
 

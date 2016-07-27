@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-var test: Set<Message> = []
+var test = Set<Message> ()
   let store: DataStore = DataStore()
 //    
 //    var managedMessageObjects: [Message] = []
@@ -59,7 +59,8 @@ var test: Set<Message> = []
         
         let cell = tableView.dequeueReusableCellWithIdentifier("basicCell", forIndexPath: indexPath)
         
-        let eachMessage = store.messages[indexPath.row]
+        let arrayMessages = Array(test)
+        let eachMessage = arrayMessages[indexPath.row]
         
        cell.textLabel?.text = eachMessage.content
         

@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 class DataStore {
-    var fetchArray = [Recipient]()
+    var recipients = [Recipient]()
     var messages:[Message] = []
     
     static let sharedDataStore = DataStore()
@@ -47,12 +47,14 @@ class DataStore {
         
         
         do{
-            self.fetchArray = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Recipient]
+            self.recipients = try managedObjectContext.executeFetchRequest(fetchRequest) as! [Recipient]
+            
         }catch let nserror1 as NSError{
+            
             error = nserror1
         }
         
-        if self.fetchArray.count == 0{
+        if self.recipients.count == 0{
             generateTestData()
         }
     }
@@ -102,7 +104,7 @@ class DataStore {
         messageThree.content = "Message 3"
         messageThree.createdAt = NSDate()
         
-        recipientA.newRelationship = [messageOne, messageTwo]
+        recipientA.messages = [messageOne, messageTwo]
         saveContext()
         fetchDataByEntity()
     }

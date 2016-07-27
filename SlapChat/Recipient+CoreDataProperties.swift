@@ -2,7 +2,7 @@
 //  Recipient+CoreDataProperties.swift
 //  SlapChat
 //
-//  Created by Flatiron School on 7/25/16.
+//  Created by Flatiron School on 7/27/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -18,6 +18,6 @@ extension Recipient {
     @NSManaged var name: String?
     @NSManaged var phoneNumber: String?
     @NSManaged var twitterHandle: String?
-    @NSManaged var newRelationship: Set<Message>?
+    @NSManaged var messages: Set<Message>?
 
 }

@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B2D4B181D468704006FD5D1 /* Recipient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D4B141D468704006FD5D1 /* Recipient+CoreDataProperties.swift */; };
-		1B2D4B191D468704006FD5D1 /* Recipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D4B151D468704006FD5D1 /* Recipient.swift */; };
-		1B2D4B1A1D468704006FD5D1 /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D4B161D468704006FD5D1 /* Message+CoreDataProperties.swift */; };
-		1B2D4B1B1D468704006FD5D1 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D4B171D468704006FD5D1 /* Message.swift */; };
 		1B2D4B1D1D468D3A006FD5D1 /* RecipientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2D4B1C1D468D3A006FD5D1 /* RecipientTableViewController.swift */; };
 		1B8593041D3D2D660051D343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8593031D3D2D660051D343 /* AppDelegate.swift */; };
 		1B8593091D3D2D660051D343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B8593071D3D2D660051D343 /* Main.storyboard */; };
@@ -19,13 +15,13 @@
 		1B8593111D3D2D660051D343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B85930F1D3D2D660051D343 /* LaunchScreen.storyboard */; };
 		1B8593191D3D2DC70051D343 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8593181D3D2DC70051D343 /* DataStore.swift */; };
 		1B85931F1D3D2EAD0051D343 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B85931E1D3D2EAD0051D343 /* TableViewController.swift */; };
+		1BE6427B1D48FBC100D88554 /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE642771D48FBC100D88554 /* Message+CoreDataProperties.swift */; };
+		1BE6427C1D48FBC100D88554 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE642781D48FBC100D88554 /* Message.swift */; };
+		1BE6427D1D48FBC100D88554 /* Recipient+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE642791D48FBC100D88554 /* Recipient+CoreDataProperties.swift */; };
+		1BE6427E1D48FBC100D88554 /* Recipient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6427A1D48FBC100D88554 /* Recipient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B2D4B141D468704006FD5D1 /* Recipient+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipient+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1B2D4B151D468704006FD5D1 /* Recipient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipient.swift; sourceTree = "<group>"; };
-		1B2D4B161D468704006FD5D1 /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		1B2D4B171D468704006FD5D1 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1B2D4B1C1D468D3A006FD5D1 /* RecipientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipientTableViewController.swift; sourceTree = "<group>"; };
 		1B8593001D3D2D660051D343 /* SlapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B8593031D3D2D660051D343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +32,10 @@
 		1B8593121D3D2D660051D343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B8593181D3D2DC70051D343 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		1B85931E1D3D2EAD0051D343 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		1BE642771D48FBC100D88554 /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Message+CoreDataProperties.swift"; path = "../Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1BE642781D48FBC100D88554 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = ../Message.swift; sourceTree = "<group>"; };
+		1BE642791D48FBC100D88554 /* Recipient+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipient+CoreDataProperties.swift"; path = "../Recipient+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1BE6427A1D48FBC100D88554 /* Recipient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipient.swift; path = ../Recipient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +52,10 @@
 		1B2D4B111D465696006FD5D1 /* stuff */ = {
 			isa = PBXGroup;
 			children = (
-				1B2D4B141D468704006FD5D1 /* Recipient+CoreDataProperties.swift */,
-				1B2D4B151D468704006FD5D1 /* Recipient.swift */,
-				1B2D4B161D468704006FD5D1 /* Message+CoreDataProperties.swift */,
-				1B2D4B171D468704006FD5D1 /* Message.swift */,
+				1BE642771D48FBC100D88554 /* Message+CoreDataProperties.swift */,
+				1BE642781D48FBC100D88554 /* Message.swift */,
+				1BE642791D48FBC100D88554 /* Recipient+CoreDataProperties.swift */,
+				1BE6427A1D48FBC100D88554 /* Recipient.swift */,
 				1B8593181D3D2DC70051D343 /* DataStore.swift */,
 			);
 			name = stuff;
@@ -166,13 +166,13 @@
 			files = (
 				1B2D4B1D1D468D3A006FD5D1 /* RecipientTableViewController.swift in Sources */,
 				1B85930C1D3D2D660051D343 /* SlapChat.xcdatamodeld in Sources */,
+				1BE6427B1D48FBC100D88554 /* Message+CoreDataProperties.swift in Sources */,
 				1B85931F1D3D2EAD0051D343 /* TableViewController.swift in Sources */,
-				1B2D4B1A1D468704006FD5D1 /* Message+CoreDataProperties.swift in Sources */,
 				1B8593191D3D2DC70051D343 /* DataStore.swift in Sources */,
-				1B2D4B191D468704006FD5D1 /* Recipient.swift in Sources */,
-				1B2D4B181D468704006FD5D1 /* Recipient+CoreDataProperties.swift in Sources */,
-				1B2D4B1B1D468704006FD5D1 /* Message.swift in Sources */,
+				1BE6427E1D48FBC100D88554 /* Recipient.swift in Sources */,
 				1B8593041D3D2D660051D343 /* AppDelegate.swift in Sources */,
+				1BE6427C1D48FBC100D88554 /* Message.swift in Sources */,
+				1BE6427D1D48FBC100D88554 /* Recipient+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

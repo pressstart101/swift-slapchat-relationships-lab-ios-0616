@@ -22,7 +22,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="hFt-69-2fe" kind="show" identifier="weee" id="zLf-si-0oT"/>
+                                    <segue destination="hFt-69-2fe" kind="show" id="34w-vP-EnI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -37,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="1295" y="-78"/>
         </scene>
-        <!--Message Table View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="iG2-Di-Uao">
             <objects>
-                <tableViewController id="hFt-69-2fe" customClass="MessageTableViewController" customModule="SlapChat" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hFt-69-2fe" customClass="TableViewController" customModule="SlapChat" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3kr-hX-lKo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +63,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0R-hJ-ZPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896" y="-17"/>
+            <point key="canvasLocation" x="2095" y="-78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KCa-fg-itu">
